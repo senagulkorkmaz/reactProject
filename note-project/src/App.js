@@ -1,28 +1,33 @@
-import './App.css';
-import 'semantic-ui-css/semantic.min.css'
-import LoginDashboard from './pages/LoginPage/LoginDashboard';
-import { BrowserRouter as Rounter, Route, Switch, Link } from "react-router-dom"
-import İnformation from './pages/HomePage/İnformation';
-import NoteAdd from './pages/NoteAddPage/NoteAdd';
-import SignIn from './pages/RegisterPage/Register';
-import NoteLayout from './pages/NotePage/NoteLayout';
-import ReduxNote from './pages/ReduxNote';
-import Notlar from './Components/Notlar';
-import Card from './layouts/ProfilLayout/Card';
-import ProfilGuncelle from './layouts/ProfileLayout/ProfilGuncelle'
-import AnaSayfa from './pages/HomePage/AnaSayfa';
-import Notlarım from './Components/Notlarım';
-import AnaSayfaa from './pages/HomePage/AnaSayfaa';
+import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import LoginDashboard from "./pages/LoginPage/LoginDashboard";
+import {
+  BrowserRouter as Rounter,
+  Route,
+  Switch,
+  Link,
+} from "react-router-dom";
+import İnformation from "./layouts/HomePageLayout/İnformation";
+import NoteAdd from "./pages/NoteAddPage/NoteAdd";
+import SignIn from "./layouts/HomePageLayout/Register";
+import NoteLayout from "./pages/NotePage/NoteLayout";
+import ReduxNote from "./pages/ReduxNote";
+import Notlar from "./Components/Notlar";
+import Card from "./layouts/HomePageLayout/Dashboard";
+import ProfilGuncelle from "./layouts/HomePageLayout/ProfilGuncelle";
+import AnaSayfa from "./pages/HomePage/AnaSayfa";
+import Notlarım from "./Components/Notlarım";
+import AnaSayfaa from "./pages/HomePage/AnaSayfaa";
+import Reset from "./layouts/HomePageLayout/Reset";
 
 function App() {
-  
   const Home = () => {
     return (
       <div className="Home">
-        <AnaSayfaa/>
+        <AnaSayfaa />
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <Rounter>
@@ -37,6 +42,7 @@ function App() {
           <Route path="/information" component={Card} />
           <Route path="/ProfilGüncelle" component={ProfilGuncelle} />
           <Route path="/myNote" component={Notlarım} />
+          <Route exact path="/reset" component={Reset} />
           <Route component={"Sayfa bulunamadı"}></Route>
         </Switch>
       </div>
@@ -44,8 +50,3 @@ function App() {
   );
 }
 export default App;
-
-
-
-
-

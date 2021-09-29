@@ -16,11 +16,11 @@ li {
 
 .register {
   position: absolute !important;
-  top: 0% !important;
+  top: 5% !important;
   text-align: center !important;
   left: 38% !important;
   background-color: rgb(138, 172, 154) !important;
-  height: 97%;
+  height: 100%;
   width: 25%;
 }
 .registerr {
@@ -74,7 +74,16 @@ li {
   top: 15% !important;
   text-align: center !important;
   left: 38% !important;
-  height: 75%;
+  height: 80%;
+  width: 23%;
+  background-color: rgb(138, 172, 154) !important;
+}
+.reset {
+  position: absolute !important;
+  top: 20% !important;
+  text-align: center !important;
+  left: 38% !important;
+  height: 55%;
   width: 23%;
   background-color: rgb(138, 172, 154) !important;
 }
@@ -95,7 +104,7 @@ imgg {
   position: absolute !important;
   top: center !important;
   text-align: center !important;
-  left:43% !important;
+  left: 43% !important;
   background-color: rgb(175, 182, 178) !important;
   width: 100%;
 }
@@ -116,6 +125,14 @@ imgg {
 
 .guncelle {
   background-color: rgb(211, 139, 98) !important;
+}
+.navi{
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(201, 23, 23);
 }
 
 .guncellee {
@@ -148,9 +165,9 @@ imgg {
 }
 .arama {
   position: absolute !important;
-  top: 32% !important;
+  top: 45% !important;
   text-align: center !important;
-  left: 30% !important;
+  left: 8% !important;
 }
 .aramaa {
   position: absolute !important;
@@ -192,6 +209,11 @@ imgg {
 }
 .baslik {
   position: absolute !important;
-  top: 6% !important;
+  top: 5% !important;
+  left: 23% !important;
+}
+.notsenbook {
+  position: absolute !important;
+  top: 1% !important;
   left: 21% !important;
 }

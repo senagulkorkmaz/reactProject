@@ -26,20 +26,6 @@ export default class ProfilGuncelle extends Component {
             <Grid.Column>
               <Form>
                 <Form.Input
-                  icon="user"
-                  iconPosition="left"
-                  label="KULLANICI ADI"
-                  type="kullaniciadi"
-                  placeholder="KULLANICI ADI"
-                />
-                <Form.Input
-                  icon="user"
-                  iconPosition="left"
-                  label="AD SOYAD"
-                  type="adSoyad"
-                  placeholder="AD SOYAD"
-                />
-                <Form.Input
                   icon="university"
                   iconPosition="left"
                   label="ÜNİVERSİTE"

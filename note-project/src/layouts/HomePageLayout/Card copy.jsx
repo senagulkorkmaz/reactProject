@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Icon, Image, Button, Dropdown } from "semantic-ui-react";
-import Profile from "../ProfilLayout/Profile";
+import Profile from "./Profile";
 import { Link } from "react-router-dom";
 import Profileİnformation from "../NaviLayout/Profileİnformation";
 import Space from "../../pages/Space";

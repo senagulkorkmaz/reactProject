@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import {
   Button,
   Form,
@@ -13,92 +12,72 @@ import {
   Switch,
   Link,
 } from "react-router-dom";
-import Space from '../../pages/Space';
+import React, { Component } from "react";
+import Space from "../../pages/Space";
 import alertify from "alertifyjs";
 import "alertifyjs/build/css/alertify.css";
 
- class Loginn extends Component {
- 
-  state={
-    email:'',
-    password:'',
-  }
-  handleChange =(e)=>{
-    this.setState({
-      [e.target.id]: e.target.value
-    })
-  }
-  handleSubmit =(e)=>{
-    e.preventDefault();
-    console.log(this.state);
-  }
+class Login extends Component {
   render() {
     function ActionLink() {
       alertify.success("GİRİŞ BAŞARILI!  ✔");
     }
+
     return (
-      <div className="container">
-      <Space/>
-      <Segment  placeholder className="deneme">
-        <Grid columns={1} relaxed="very" stackable>
-          <p className="baslik">
-            <font size="6" face="Agency FB" color="black">
-              NOTSENBOOK
-            </font>
-          </p>
-          <Grid.Column>
-            <Form onSubmit={this.handleSubmit}>
-              <br></br>
-              <br></br>
-              <div className="input-field">
-              <Form.Input
-              onChange={this.handleChange}
-                id="email"
-                type="email"
-                icon="user"
-                iconPosition="email"
-                label="email"
-                placeholder="email"
-              />
-              </div>
-              <div className="input-field">
-              <Form.Input
-              onChange={this.handleChange}
-                id="password"
-                icon="lock"
-                iconPosition="left"
-                label="password"
-                type="password"
-                placeholder="password"
-              />
-              </div>
-              <Checkbox left="center" label="Beni Hatırla" defaultChecked />
-              <br></br>
-              <br></br>
-              <div className="input-field">
-              <Link onClick={ActionLink} to="/profile">
-                <li>
-                  <button className="btn red lighten-1 z-depth-0">GİRİŞ YAP</button>
-                </li>
-              </Link>
-              </div>
-              <Header as="h5">Kullanıcı Değilsen!</Header>
-              <Link to="/register">
-                <li>
-                  <Button
-                    content="Kayıt Ol"
-                    icon="right arrow"
-                    labelPosition="right"
-                  />
-                </li>
-              </Link>
-            </Form>
-          </Grid.Column>
-        </Grid>
-      </Segment>
-    </div>
-    )
+      <div>
+        <Space />
+        <Segment placeholder className="deneme">
+          <Grid columns={1} relaxed="very" stackable>
+            <p className="baslik">
+              <font size="6" face="Agency FB" color="black">
+                NOTSENBOOK
+              </font>
+            </p>
+            <Grid.Column>
+              <Form>
+                <br></br>
+                <br></br>
+                <Form.Input
+                  id="email"
+                  type="email"
+                  icon="mail"
+                  iconPosition="left"
+                  label="Email"
+                  placeholder="Email"
+                />
+                <Form.Input
+                  id="password"
+                  icon="lock"
+                  iconPosition="left"
+                  label="Parola"
+                  type="password"
+                  placeholder="Parola"
+                />
+                <Checkbox left="center" label="Beni Hatırla" defaultChecked />
+                <br></br>
+                <br></br>
+                <Link to="/profile">
+                  <li>
+                    <Button color="red">GİRİŞ YAP</Button>
+                  </li>
+                </Link>
+                <Header as="h5">Kullanıcı Değilsen!</Header>
+                <Link to="/register">
+                  <li>
+                    <Button
+                      content="Kayıt Ol"
+                      icon="right arrow"
+                      labelPosition="right"
+                    />
+                  </li>
+                </Link>
+              </Form>
+            </Grid.Column>
+          </Grid>
+        </Segment>
+      </div>
+    );
   }
 }
 
-export default Loginn
+export default Login;

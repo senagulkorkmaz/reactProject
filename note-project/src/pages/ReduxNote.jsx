@@ -5,7 +5,6 @@ import Space from "./Space";
 import Header from "../Components/Header";
 import YeniEkle from "../Components/YeniEkle";
 
-
 class ReduxNote extends Component {
   state = {};
 
@@ -13,7 +12,7 @@ class ReduxNote extends Component {
 
   render() {
     const { value } = this.state;
-   
+
     return (
       <div>
         <Profileİnformation />

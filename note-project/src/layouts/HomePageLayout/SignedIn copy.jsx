@@ -4,7 +4,7 @@ import { Button, Divider, Form, Grid, Segment, Input } from "semantic-ui-react";
 import { Link, NavLink } from "react-router-dom";
 import { Dropdown, Menu, Image } from "semantic-ui-react";
 import Note from "../NoteLayout/Note";
-import PrivatePublic from "./PrivatePublic";
+import PrivatePublic from "../ProfileLayout/PrivatePublic";
 
 const SignedIn = () => {
   return (
